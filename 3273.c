@@ -17,7 +17,10 @@ int main() {
 	int p1 = 0, p2 = n - 1;
 	while (p1 < p2) {
 		int tmp = arr[p1] + arr[p2];
-		if (tmp == x) result++;
+		if (tmp == x) {
+			result++;
+			p1++;
+		}
 		else if (tmp < x) p1++;
 		else p2--;
 	}
